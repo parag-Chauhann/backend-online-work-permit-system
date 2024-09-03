@@ -70,7 +70,7 @@ router.post('/success', async (req, res) => {
       });
     }
 
-    return res.redirect('http://localhost:3000/success');
+    return res.redirect('https://online-permit-to-work.vercel.app//success');
   } catch (error) {
     console.error('Error updating Firestore:', error);
     return res.status(500).send({ error: 'Internal Server Error' });
@@ -79,7 +79,7 @@ router.post('/success', async (req, res) => {
 
 // Route for failed payment
 router.post('/failure', (req, res) => {
-  return res.redirect('http://localhost:3000/failure');
+  return res.redirect('https://online-permit-to-work.vercel.app//failure');
 });
 
 module.exports = router;
